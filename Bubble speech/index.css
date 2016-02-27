@@ -1,0 +1,20 @@
+.speech {
+    width: 20px;
+    height: 20px;
+    background-color: darkturquoise;
+    transform: rotate(45deg);
+    position: relative;
+    margin-left: -10px;
+    margin-top: 25px;
+    }
+
+.bubble {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: darkturquoise;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    }
+
