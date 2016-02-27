@@ -1,0 +1,31 @@
+img[src="mainlogo.png"] {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.heading {
+    font: "Times New Roman";
+    font-weight: bolder;
+    font-size: 55;
+    position: relative;
+    top:20px;
+    left: 105px;
+}
+
+.word {
+    color:dodgerblue;
+}
+
+.size {
+    font-size: 80;
+}
+
+img[src="mini32.png"] {
+    width:20px;
+    height: 20px;
+    position: relative;
+    top: -36px;
+    left: 330px;   
+}
+
