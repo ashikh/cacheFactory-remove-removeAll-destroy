@@ -1,0 +1,10 @@
+.div{
+    width:250px;
+    height: 200px;
+    background-color: aquamarine;
+    font-family: verdana;
+    border:20px solid blue;
+    margin:25px;
+    box-sizing: content-box;
+    padding:10px;
+}
