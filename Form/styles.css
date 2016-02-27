@@ -1,0 +1,84 @@
+.container1 {
+position: absolute;
+margin: 30px auto;
+width: 500px;
+height: 815px;
+background-image: url(colors2.JPG)
+}
+
+
+.step {
+    margin:10px 10px;
+    color: white;
+    font-family: verdana, serif;
+}
+
+.container2 {
+    font-family: verdana, sans-serif;
+    font-size: 12px;
+    position: relative;
+    margin: 10px auto;
+    border-color: white;
+    border-radius: 5px;
+    padding: 12px;
+    width: 450px;
+    height: 23px;
+    background-color: cornsilk;
+    color: black;
+}
+
+.text1 {
+    width: 210px;
+    position: relative;
+    margin: -17px auto;
+}
+
+.container3 {
+    font-family: verdana, sans-serif;
+    font-size: 12px;
+    position: relative;
+    margin: 10px auto;
+    border-color: white;
+    border-radius: 5px;
+    padding: 12px;
+    width: 450px;
+    height: 75px;
+    background-color: cornsilk;
+    color: black;
+}
+
+.container4 {
+    font-family: verdana, sans-serif;
+    font-size: 12px;
+    position: relative;
+    margin: 10px auto;
+    border-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    width: 460px;
+    height: 75px;
+    background-color: cornsilk;
+    color: black;
+}
+
+.choice {
+    position: relative;
+    margin: 25px auto;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    margin: 0px 35%;
+    background-color: green;
+    border-radius: 100px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: white;
+    text-decoration: none;
+} 
+
