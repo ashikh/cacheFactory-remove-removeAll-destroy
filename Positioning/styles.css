@@ -1,0 +1,19 @@
+.heading{
+    font-family: serif;
+    position: relative;
+    float: left;
+}
+
+.images1{
+position:absolute;
+top:0;
+left:0;
+}
+
+.para1{
+    font-family: sans-serif;
+    font-style: oblique;
+    position: relative;
+    float: left;
+}
+
