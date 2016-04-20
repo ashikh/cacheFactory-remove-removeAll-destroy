@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Validation Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="container">
+    <div>
+      <h2 class="form_title">Registration Form</h2>
+    </div>
+    <div id="form_name">
+        <form name="form" >
+      <div class="name_form">
+       <div id="msgBox"></div>
+        <input type="text" name="Name" value="" placeholder="Your Name"  class="input_name" >
+      </div>
+      <div id="email_form">
+        <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email">
+      </div>
+      <div id="phone_form">
+        <input type="text" name="Phone" value="" placeholder="Your phone number" class="input_phone">
+      </div>
+      <div id="address_form">
+          <textarea name="address" value="" rows="5" cols="24" placeholder="Your address" class="input_password"></textarea>
+      </div>
+       <div>
+<button type="button" onclick="(function() {
+	var emailRegex = /^[A-Za-z0-9._]*\@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+    var phoneRegex= /[0-9]/g;
+    var fullname = document.form.Name.value;
+    var memail = document.form.Email.value;
+    var phone = document.form.Phone.value;
+   
+    if(fullname == ''){
+		document.form.Name.focus();
+		document.getElementById('msgBox').innerHTML = 'Enter your name';
+		return false;
+	 }
+                               
+    if(memail == ''){
+		document.form.Email.focus();
+		document.getElementById('msgBox').innerHTML = 'Enter the email';
+		return false;
+	 }  else if(!emailRegex.test(memail)){
+		document.form.Email.focus();
+		document.getElementById('msgBox').innerHTML = 'Enter valid email';
+		return false;
+	 }
+    
+    if(!phoneRegex.test(phone)){
+		document.form.Phone.focus();
+		document.getElementById('msgBox').innerHTML = 'Enter valid phone number';
+		return false;
+	 }
+    
+		if(fullname != '' && memail != '' && phone != '') {
+             document.getElementById('msgBox').innerHTML = '';     
+			document.getElementById('signButton').innerHTML = 'Form submitted successfully';
+			}})();"
+>Register</button>
+<div id="signButton"></div>
+      </div>
+     </form>
+    </div>
+</div>
+</body>
+</html>
