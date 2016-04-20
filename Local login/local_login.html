@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tech login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="index.css">
+    <script src="modernizr-custom.js"></script>
+    </head>
+<body>
+<section class="container">
+<header>
+<h1>MySelfie Tech</h1>
+    </header>
+<div id="enter" class="show">
+<button type="button" onclick="login()">Login</button>
+<button type="button" onclick="signUp()" id="sign">SignUp</button>
+</div>
+<section id="signup" class="hide">
+    <p>Sign up</p>
+    <p><input type="text" id="valueName" required placeholder="Name"/></p>
+    <p><input type="email" id="valueEmail" required onblur="mailId()" placeholder="email"/></p><div id="mailError" class="hide">Enter valid email</div>
+    <p><input type="password" id="valuePassword" required placeholder="password"/></p>
+    <button type="button" onclick="storeValue()">Submit query</button><br>
+<div id="msg" class="hide">Sign up successful. Now you can login</div>
+<button id="back" onclick="home()">Back</button>
+</section>
+<section id="login" class="hide">
+    <p>Login</p>
+    <p><input type="email" id="checkEmail" required placeholder="email"/></p>
+    <p><input type="password" id="checkPassword" required placeholder="password"/></p>
+    <button type="button" onclick="verifyValue()">Submit</button>
+<div id="error" class="hide">username or password is incorrect</div><br>
+<button id="back" onclick="home()" >Back</button>
+</section>
+<section id="success" class="hide">
+Welcome to<div id="user"></div>
+    
+<button id="logout" onclick="home()" type="button">Log out</button>
+    </section>
+</section>    
+<script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+ .container {
+            width: 650px;
+            height: 700px;
+            position: relative;
+            margin: 10px auto;
+            align-content: center;
+            text-align: center;
+        }
+        .hide {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+        #msg {
+            color: green;
+        }
+        #error, #mailError {
+            color: red;
+        }
+        #logout {
+            position: relative;
+            margin: 100px auto;
+            float: right;
+        }
