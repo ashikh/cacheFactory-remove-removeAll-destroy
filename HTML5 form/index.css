@@ -1,0 +1,83 @@
+#main-content {
+           width: 750px;
+           height:390px;
+           background-color: aliceblue;
+           margin:5px 0;
+           flex-direction: row;
+           align-content: space-between;
+           padding: 15px;
+           font: verdana;
+           font-size: 20px;
+           color: midnightblue;
+            font-family: sans-serif;
+        }
+        
+        .enter {
+            width: 100%;
+            height:40px;
+            font-weight: bold;
+        }
+        
+        .regcontain {
+        margin-top: 0px;
+        width: 310px;
+        height:350px;
+        position: relative; 
+        float: left;
+        }
+        
+        #span1 {
+            color: darkgray;
+        } 
+        
+        .logcontain {
+        margin-top: 10px;
+        width: 380px;
+        height:240px;
+        background-color:midnightblue;
+        position: relative;
+        float: right;
+        padding:10px;
+        color: white;
+        }
+        
+        #reg {
+            float: right;
+            width: 100px;
+            height: 30px;
+            color: midnightblue;
+            border-color: midnightblue;
+            background-color: aliceblue;
+            font-weight: bolder;
+        }
+        
+         #log {
+            float: right;
+            width: 100px;
+            height: 30px;
+            color: white;
+            border-color: gold;
+            background-color: midnightblue;
+            font-weight: bolder;
+            }
+        
+        #form2 {
+            margin-top: -20px;
+            height: 250px;
+        }
+        
+        #p1 {
+            color: darkgrey;
+            font-size: 12px;
+        }
+        #span2 {
+            font-size: 16px;
+        }
+        a {
+            font-size: 12px;
+            color: white;
+        }
+        #forgot {
+            margin-top: 10px;
+            margin-left: 280px;
+        }
