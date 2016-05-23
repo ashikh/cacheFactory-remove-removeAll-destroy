@@ -1,0 +1,42 @@
+    #container{
+        width: 800px;
+        height: 500px;
+    }
+    #avail{
+        width: 360px;
+        height: 500px;
+    }
+    img{
+        margin: 5px auto;
+		height: 35px;
+    }
+    #flow{
+        position: relative;
+        margin-top: -410px;
+        margin-left: 270px;
+        width: 85px;
+        height: 500px;
+    }
+    #select{
+        margin-top: -590px;
+        margin-left: 375px;
+        width: 375px;
+        height: 500px;
+    }
+    input{
+        height: 40px;
+        width: 230px;
+        margin: 10px;
+        font-size: 20px;
+    }
+    #box1, #box2{
+        margin: 10px;
+        width:230px;
+    }
+    #available, #selected{
+    width:230px;
+	font-size: 18px;
+    }
+span{
+	color: grey;
+}
