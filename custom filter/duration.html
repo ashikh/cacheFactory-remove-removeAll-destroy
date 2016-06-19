@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sort Order filter</title>    
-</head>
+<title>Custom filter for duration</title>
 <link rel="stylesheet" href="style.css">
+</head>
 <body>
 <script src="angular.min.js"></script>
-	<h3>Sort session by name</h3>
-	<div ng-app="myapp" ng-controller="myctrl">
-		<table>
+	<h3>Custom filter for duration</h3>
+	<div id="disp" ng-app="myapp" ng-controller="myctrl">
+		<table id="t1">
 			<tr>
 			<th>Name</th>
 			<th>Topic</th>
+			<th>Time</th>
 			</tr>
 		<tr ng-repeat="x in session">
 		<td ng-bind="x.name"></td>
 		<td ng-bind="x.topic"></td>
+		<td ng-bind="x.time"></td>
 		</tr>
+		</table>
+		<table id="t2">
+		<th>Duration (minutes)</th>
+		<tr ng-repeat="y in time">
+		<td>{{y|duration}}</td>	
+			</tr>
 		</table>
 	</div>
 <script src="app.js"></script>
