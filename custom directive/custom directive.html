@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom directive</title>
+<script src="angular.min.js"></script>
+</head>
+	<body ng-app="myApp" ng-directive="display">
+	
+	<p>Write in textbox to display text:<input type="text" ng-model="msg"></p>
+		<display>{{msg}}</display>
+<script>
+var app=angular.module('myApp',[]);
+	</script>
+	</body>
+</html>
