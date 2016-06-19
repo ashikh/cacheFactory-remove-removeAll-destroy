@@ -1,0 +1,12 @@
+table{
+	width:300px;
+	font: verdana;
+	text-align: center;
+	}
+		th{
+			color: white;
+			background-color: palegreen;
+		}
+		td{
+			background-color: beige;
+		}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>submit input</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="angular.min.js"></script>
+	<div ng-app="myapp" ng-controller="mycontroller">
+		<form name="myForm">
+		<p>Name:<input type="text" ng-model="name"></p>
+		<p>Place:<input type="text" ng-model="place"></p>
+		<button type="button">Submit</button>
+		</form><br>
+	<table>
+		<tr>
+		<th>Name</th>
+		<th>Place</th>
+		</tr>
+		<tr>
+		<td>{{name}}</td>
+		<td>{{place}}</td>
+		</tr>
+		</table><br>
+		<h3>Details</h3>
+		<h3>Name:{{name}}</h3>
+		<h3>Place:{{place}}</h3>
+	</div>
+<script src="app.js"></script>
+</body>
+</html>
