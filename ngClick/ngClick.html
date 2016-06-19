@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Angular Click</title>    
+</head>
+<body>
+<script src="angular.min.js"></script>
+	<div ng-app="myapp" ng-controller="myctrl">
+	<button ng-click="alrt()">Click me</button>
+	</div>
+<script>
+	angular.module('myapp', []).controller('myctrl', function($scope){
+		$scope.alrt=function() {
+	alert('Hello ! You just clicked a button');
+		};
+	});
+</script>
+</body>
+</html>
