@@ -23,4 +23,18 @@ var app=angular.module('myApp',[]);
 		output=newFactory.get('place');
 		console.log('(get)place:'+output);
 		document.getElementById('temp4').innerHTML='(get)place:'+output;
+		//remove
+		output=newFactory.remove('name');
+		output=newFactory.get('name');
+		console.log('name(after remove operation):'+output);
+		document.getElementById('temp5').innerHTML='name(after remove operation):'+output;
+		//removeAll
+		output=newFactory.removeAll();
+		output=newFactory.get('place');
+		console.log('output after removeAll operation:'+output);
+		document.getElementById('temp6').innerHTML='output after removeAll operation:'+output;
+		//destroy
+		output=newFactory.destroy();
+		console.log('output after destroy operation:'+output);
+		document.getElementById('temp7').innerHTML='output after destroy operation:'+output;
 	});
