@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Angular Bind</title>    
+</head>
+<body>
+<script src="angular.min.js"></script>
+	<div ng-app="myapp" ng-controller="myctrl">
+	<p>First name of person is:<span ng-bind="name"></span></p>
+	</div>
+<script>
+	var app=angular.module('myapp', []);
+	app.controller('myctrl', function($scope)
+		{
+	$scope.name='Ashok';
+	});
+</script>
+</body>
+</html>
