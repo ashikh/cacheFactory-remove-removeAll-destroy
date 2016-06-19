@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom directive using isolated scope</title>
+	<script src="angular.min.js"></script>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="myCtrl">
+		<display>Hello {{msg}}. This is displayed using controller scope</display>
+		<txt-display></txt-display>
+		</div>
+	<script src="app.js"></script>
+	</body>
+</html>
