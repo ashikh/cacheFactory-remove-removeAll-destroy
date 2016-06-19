@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Two way binding in isolated scope</title>
+<title>one-way binding in isolated scope</title>
 	<script src="angular.min.js"></script>
 	</head>
 	<body ng-app="myApp">
 		<div ng-controller="myCtrl">
 		<display>{{msg}}</display>
-		<txt-display my-disp="msg"></txt-display>
-		<txt-display my-disp="msg"></txt-display>
+		<txt-display my-disp="{{msg}}"></txt-display>
+		<txt-display my-disp="{{msg}}"></txt-display>
 		</div>
 	<script src="app.js"></script>
 	</body>

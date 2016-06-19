@@ -6,7 +6,7 @@ var app=angular.module('myApp', []);
 			return {
 				restrict:'EA',
 				scope:{
-					txt:'=myDisp'
+					txt:'@myDisp'
 				},
 				templateUrl:'templates/disp.html'
 			};
