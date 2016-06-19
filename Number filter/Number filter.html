@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Uppercase filter</title>    
+<title>Number filter</title>    
 </head>
 <body>
 <script src="angular.min.js"></script>
 	<div ng-app="myapp" ng-controller="myctrl">
-	<p>{{msg | uppercase}}</p>
+	<p>pi value reduced to 2 decimal places:{{piValue | number:2}}</p>
 	</div>
 <script>
 	var app=angular.module('myapp', []);
 	app.controller('myctrl', function($scope)
 		{
-	$scope.msg='previously this message was in lowercase';
+	$scope.piValue=3.14285;
 	});
 </script>
 </body>
