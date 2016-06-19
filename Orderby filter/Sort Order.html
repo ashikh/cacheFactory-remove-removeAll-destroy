@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort Order filter</title>    
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<script src="angular.min.js"></script>
+	<h3>Sort session by name</h3>
+	<div ng-app="myapp" ng-controller="myctrl">
+		<table>
+			<tr>
+			<th>Name</th>
+			<th>Topic</th>
+			</tr>
+		<tr ng-repeat="x in session">
+		<td ng-bind="x.name"></td>
+		<td ng-bind="x.topic"></td>
+		</tr>
+		</table>
+	</div>
+<script src="app.js"></script>
+</body>
+</html>
