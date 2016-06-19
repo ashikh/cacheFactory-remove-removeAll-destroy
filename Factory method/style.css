@@ -1,0 +1,8 @@
+tr,td{
+			width: 200px;
+			border: 2px solid black;
+			border-width: thin;
+			margin: 10px;
+			padding: 5px;
+			text-align: center;
+		}
